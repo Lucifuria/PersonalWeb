@@ -1,0 +1,63 @@
+ /*/deep/  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: lightblue;
+}
+/deep/ .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: blue;
+} */
+
+  div.text-day-visible {
+    opacity: 100%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 2vh;
+    color: #080435;    
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  div.text-day-hidden {
+    opacity: 0%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 2vh;
+    color: #080435; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+
+  div.text-night-visible {
+    opacity: 100%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 2vh;
+    color: #B8B4E6;    
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  div.text-night-hidden {
+    opacity: 0%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 2vh;
+    color: #B8B4E6; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  div.name {
+    font-size: 10vh;
+  }
+
+  div.mail {
+    font-size: 5vh;
+  }

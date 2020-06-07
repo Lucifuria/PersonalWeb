@@ -1,0 +1,53 @@
+  
+  div.text-day-visible {
+    opacity: 100%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    top: calc((100vh - 200px)/2 + 200px);
+    color: #080435; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  div.text-day-hidden {
+    opacity: 0%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    top: calc((100vh - 200px)/2 + 200px);
+    color: #080435; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+
+  div.text-night-visible {
+    opacity: 100%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    top: calc((100vh - 200px)/2 + 200px);
+    color: #B8B4E6; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  div.text-night-hidden {
+    opacity: 0%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    top: calc((100vh - 200px)/2 + 200px);
+    color: #B8B4E6; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  div.name {
+    font-size: 10vh;
+  }

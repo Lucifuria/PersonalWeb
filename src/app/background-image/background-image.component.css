@@ -1,0 +1,104 @@
+.background-photo-day-home {  
+    opacity: 100%;
+    width : 101vw;
+    position: fixed;
+    left: 0px;
+    bottom: 30vh;     
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}  
+
+.background-photo-night-home {
+  opacity: 35%;
+  width : 101vw;
+  position: fixed;
+  left: 0px;
+  bottom: 30vh;
+
+  -webkit-transition: 1.0s;
+  transition: 1.0s;
+}
+
+.background-photo-mask-home {
+  height: 70vh;
+  width: 101vw;
+  background-color: black;
+  display: inline-block;    
+  position: fixed;
+  left: 0px;
+  bottom: 30vh;
+  
+  -webkit-transition: 1.0s;
+  transition: 1.0s;
+}
+
+.background-photo-day-cvhome {  
+  opacity: 100%;
+  width : 101vw;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;      
+
+  -webkit-transition: 1.0s;
+  transition: 1.0s;
+}  
+
+.background-photo-night-cvhome {
+opacity: 35%;
+width : 101vw;
+position: fixed;
+left: 0px;
+bottom: 0px;
+
+-webkit-transition: 1.0s;
+transition: 1.0s;
+}
+
+.background-photo-mask-cvhome {
+height: 101vh;
+width: 101vw;
+background-color: black;
+display: inline-block;    
+position: fixed;
+left: 0px;
+bottom: 0px;
+
+-webkit-transition: 1.0s;
+transition: 1.0s;
+}
+
+.background-photo-day-portfoliohome {  
+  opacity: 100%;
+  width : 101vw;
+  position: fixed;
+  left: 0px;
+  bottom: -30vh;     
+
+  -webkit-transition: 1.0s;
+  transition: 1.0s;
+}  
+
+.background-photo-night-portfoliohome {
+opacity: 35%;
+width : 101vw;
+position: fixed;
+left: 0px;
+bottom: -30vh;
+
+-webkit-transition: 1.0s;
+transition: 1.0s;
+}
+
+.background-photo-mask-portfoliohome {
+height: 101vh;
+width: 101vw;
+background-color: black;
+display: inline-block;    
+position: fixed;
+left: 0px;
+bottom: 0vh;
+
+-webkit-transition: 1.0s;
+transition: 1.0s;
+}

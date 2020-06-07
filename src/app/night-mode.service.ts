@@ -1,0 +1,37 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class NightModeService {
+  public nightMode = false;
+
+  constructor() { }
+
+  public setMode() {    
+    let index_body = document.getElementById('index_body');
+    let background_photo = document.getElementById('background-photo');
+    let portrait_photo = document.getElementById('portrait-photo');
+
+    let home_text = document.getElementById('home-text');
+    let cvhome_text = document.getElementById('cvhome-text');    
+    let portfoliohome_text = document.getElementById('portfoliohome-text');
+
+    this.replaceDayAndNight(index_body, this.nightMode);
+    this.replaceDayAndNight(background_photo, this.nightMode);
+    this.replaceDayAndNight(portrait_photo, this.nightMode);
+    this.replaceDayAndNight(home_text, this.nightMode);
+    this.replaceDayAndNight(cvhome_text, this.nightMode);
+    this.replaceDayAndNight(portfoliohome_text, this.nightMode);
+
+  }
+
+  replaceDayAndNight(text: HTMLElement, nightMode: boolean) {
+    if (nightMode) {
+      if (text) text.className = text.className.replace("day","night");
+    }
+    else {
+      if (text) text.className = text.className.replace("night","day");
+    }
+  }
+}

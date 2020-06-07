@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body.day  {
+    background-color: white;
+    color: #080435;
+    
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+body.night {
+    background-color: black;
+    color: #B8B4E6;
+    
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
