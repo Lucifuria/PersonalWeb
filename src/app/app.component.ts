@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NightModeService } from './night-mode.service';
 import { PageService } from './page.service';
+import { timer } from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -9,15 +10,21 @@ import { PageService } from './page.service';
 })
 
 export class AppComponent {
-  constructor(public nightModeService: NightModeService, public pageService: PageService) { }
+  constructor(public nightModeService: NightModeService, public pageService: PageService) {
+  }
 
   home_page = true;
   cvhome_page = false;
   portfoliohome_page = false;
+  lastEvent = -201;
 
-  onMouseWheel(evt) {    
-    console.log(evt.wheelDelta);
-    if (this.pageService.test){
+  onMouseWheel(evt) {   
+    if (evt.timeStamp - this.lastEvent > 50)
+      this.pageService.test = true;
+
+    this.lastEvent = evt.timeStamp;     
+    if (this.pageService.test) {       
+      console.log(evt.timeStamp);   
       if (evt.wheelDelta < 0) {
         if (this.pageService.currentPage == "home") {
           this.pageService.currentPage = "cvhome";
@@ -66,14 +73,20 @@ export class AppComponent {
       this.nightModeService.setMode();
       this.pageService.setPage();
       this.pageService.test = false;
-    }
-    
-  
-    setTimeout(() => {
-      this.pageService.test = true;
+    } 
 
-    }, 200);
-    
+  }
+
+  onClick(evt) { 
+    if (this.pageService.currentPage == "cvhome") {
+      this.pageService.currentPage = "cv";
+    }
+    else if (this.pageService.currentPage == "portfoliohome") {
+      this.pageService.currentPage = "portfolio";
+    }
+
+    this.nightModeService.setMode();
+    this.pageService.setPage();
   }
 
 }

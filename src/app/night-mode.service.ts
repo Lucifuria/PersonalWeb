@@ -10,7 +10,8 @@ export class NightModeService {
 
   public setMode() {    
     let index_body = document.getElementById('index_body');
-    let background_photo = document.getElementById('background-photo');
+    let background_photo = document.getElementById('background-photo');    
+    let background_photo_cover = document.getElementById('background-photo-cover');
     let portrait_photo = document.getElementById('portrait-photo');
 
     let home_text = document.getElementById('home-text');

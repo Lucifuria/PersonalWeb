@@ -14,7 +14,8 @@ export class PageService {
 
   public setPage() {
     let background_photo = document.getElementById('background-photo');    
-    let background_photo_mask = document.getElementById('background-photo-mask');    
+    let background_photo_mask = document.getElementById('background-photo-mask');  
+    let background_photo_cover = document.getElementById('background-photo-cover');   
     let portrait_photo = document.getElementById('portrait-photo');    
     let portrait_photo_mask = document.getElementById('portrait-photo-mask');
     let home_text = document.getElementById('home-text');
@@ -22,11 +23,13 @@ export class PageService {
     let portfoliohome_text = document.getElementById('portfoliohome-text');
 
     if (this.nightModeService.nightMode) {
-      background_photo.className = "background-photo-night-" + this.currentPage;         
+      background_photo.className = "background-photo-night-" + this.currentPage;  
+      background_photo_cover.className = "background-photo-cover-night-" + this.currentPage;        
       portrait_photo.className = "portrait-photo-night-" + this.currentPage;     
     }
     else {      
       background_photo.className = "background-photo-day-" + this.currentPage; 
+      background_photo_cover.className = "background-photo-cover-day-" + this.currentPage; 
       portrait_photo.className = "portrait-photo-day-" + this.currentPage;  
     }
     
