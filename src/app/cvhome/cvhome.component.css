@@ -11,6 +11,18 @@
     transition: 1.0s;
   }
 
+  div.text-day-page {
+    opacity: 100%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    color: #080435; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
   div.text-day-hidden {
     opacity: 0%;
     text-align: center;
@@ -30,6 +42,18 @@
     width: 100vw;
     position: fixed;
     top: calc((100vh - 200px)/2 + 200px);
+    color: #B8B4E6; 
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  div.text-night-page {
+    opacity: 100%;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
     color: #B8B4E6; 
 
     -webkit-transition: 1.0s;

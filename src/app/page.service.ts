@@ -43,20 +43,22 @@ export class PageService {
       home_text.className = home_text.className.replace("visible", "hidden");
     }
 
-    if (this.currentPage == "cvhome" && cvhome_text) {
-      cvhome_text.className = cvhome_text.className.replace("hidden", "visible");
-    }
-    else if (cvhome_text) {
-      cvhome_text.className = cvhome_text.className.replace("visible", "hidden");
-    }
+    this.changeVisiblePageHidden(cvhome_text, "cv");
+    this.changeVisiblePageHidden(portfoliohome_text, "portfolio");
 
-    if (this.currentPage == "portfoliohome" && portfoliohome_text) {
-      portfoliohome_text.className = portfoliohome_text.className.replace("hidden", "visible");
-    }
-    else if (portfoliohome_text) {
-      portfoliohome_text.className = portfoliohome_text.className.replace("visible", "hidden");
-    }
+  }
 
+  changeVisiblePageHidden (element: HTMLElement, text: string) {
+    if (this.currentPage == text + "home" && element) {
+      element.className = element.className.replace("hidden", "visible");    
+      element.className = element.className.replace("page", "visible");
+    }
+    else if (this.currentPage == text && element) {      
+      element.className = element.className.replace("visible", "page");
+    }
+    else if (element) {
+      element.className = element.className.replace("visible", "hidden");
+    }
   }
 
   public setInvisible(textID: string) {

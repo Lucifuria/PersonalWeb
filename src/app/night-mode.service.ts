@@ -24,6 +24,7 @@ export class NightModeService {
     this.replaceDayAndNight(home_text, this.nightMode);
     this.replaceDayAndNight(cvhome_text, this.nightMode);
     this.replaceDayAndNight(portfoliohome_text, this.nightMode);
+    this.replaceDayAndNight(background_photo_cover, this.nightMode);
 
   }
 

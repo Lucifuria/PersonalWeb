@@ -303,7 +303,7 @@ transition: 1.0s;
 }
 
 .background-photo-cover-night-portfolio {
-  height: 0vh;
+  height: 90vh;
   width: 101vw;
   background-color: black;
   display: inline-block;    
