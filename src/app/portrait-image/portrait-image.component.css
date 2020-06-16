@@ -1,7 +1,8 @@
 .portrait-photo-day-home {
     opacity: 100%;
-    height: 200px;
+    height: 201px;
     width: 200px;    
+    border-radius: 50%;
     position: fixed;
     left: calc((100vw - 200px)/2);
     bottom: 20vh;
@@ -12,8 +13,9 @@
 
   .portrait-photo-night-home {
     opacity: 35%;
-    height: 200px;
-    width: 200px;    
+    height: 201px;
+    width: 200px;   
+    border-radius: 50%; 
     position: fixed;
     left: calc((100vw - 200px)/2);
     bottom: 20vh;
@@ -38,7 +40,7 @@
 
   .portrait-photo-day-cvhome {
     opacity: 100%;
-    height: 200px;
+    height: 201px;
     width: 200px;    
     position: fixed;
     left: calc((100vw - 200px)/2);
@@ -50,7 +52,7 @@
 
   .portrait-photo-night-cvhome {
     opacity: 35%;
-    height: 200px;
+    height: 201px;
     width: 200px;    
     position: fixed;
     left: calc((100vw - 200px)/2);
@@ -64,7 +66,6 @@
     height: 200px;
     width: 200px;
     background-color: black;
-    border-radius: 50%;
     display: inline-block;    
     position: fixed;
     left: calc((100vw - 200px)/2);
@@ -76,7 +77,7 @@
 
   .portrait-photo-day-portfoliohome {
     opacity: 100%;
-    height: 200px;
+    height: 201px;
     width: 200px;    
     position: fixed;
     left: calc((100vw - 200px)/2);
@@ -88,7 +89,7 @@
 
   .portrait-photo-night-portfoliohome {
     opacity: 35%;
-    height: 200px;
+    height: 201px;
     width: 200px;    
     position: fixed;
     left: calc((100vw - 200px)/2);
@@ -102,11 +103,47 @@
     height: 200px;
     width: 200px;
     background-color: black;
-    border-radius: 50%;
     display: inline-block;    
     position: fixed;
     left: calc((100vw - 200px)/2);
     bottom: calc((100vh - 200px)/2);
+    
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  .portrait-photo-day-cv {
+    opacity: 100%;
+    height: 101px;
+    width: 100px;    
+    position: fixed;
+    left: 10px;
+    bottom: calc(90vh - 110px);
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  .portrait-photo-night-cv {
+    opacity: 35%;
+    height: 101px;
+    width: 100px;    
+    position: fixed;
+    left: 10px;
+    bottom: calc(90vh - 110px);
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+  }
+
+  .portrait-photo-mask-cv {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    display: inline-block;    
+    position: fixed;
+    left: 10px;
+    bottom: calc(90vh - 110px);
     
     -webkit-transition: 1.0s;
     transition: 1.0s;

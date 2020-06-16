@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NightModeService } from './night-mode.service';
 import { PageService } from './page.service';
-import { timer } from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -16,14 +15,15 @@ export class AppComponent {
   home_page = true;
   cvhome_page = false;
   portfoliohome_page = false;
+  cv_page = false;
   lastEvent = -201;
 
   onMouseWheel(evt) {   
     if (evt.timeStamp - this.lastEvent > 50)
-      this.pageService.test = true;
+      this.pageService.timerPause = true;
 
     this.lastEvent = evt.timeStamp;     
-    if (this.pageService.test) {       
+    if (this.pageService.timerPause) {       
       console.log(evt.timeStamp);   
       if (evt.wheelDelta < 0) {
         if (this.pageService.currentPage == "home") {
@@ -72,7 +72,7 @@ export class AppComponent {
 
       this.nightModeService.setMode();
       this.pageService.setPage();
-      this.pageService.test = false;
+      this.pageService.timerPause = false;
     } 
 
   }
@@ -80,6 +80,7 @@ export class AppComponent {
   onClick(evt) { 
     if (this.pageService.currentPage == "cvhome") {
       this.pageService.currentPage = "cv";
+      this.cv_page = true;
     }
     else if (this.pageService.currentPage == "portfoliohome") {
       this.pageService.currentPage = "portfolio";

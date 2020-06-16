@@ -17,6 +17,8 @@ export class NightModeService {
     let home_text = document.getElementById('home-text');
     let cvhome_text = document.getElementById('cvhome-text');    
     let portfoliohome_text = document.getElementById('portfoliohome-text');
+    
+    let cv = document.getElementById('cv');
 
     this.replaceDayAndNight(index_body, this.nightMode);
     this.replaceDayAndNight(background_photo, this.nightMode);
@@ -24,7 +26,8 @@ export class NightModeService {
     this.replaceDayAndNight(home_text, this.nightMode);
     this.replaceDayAndNight(cvhome_text, this.nightMode);
     this.replaceDayAndNight(portfoliohome_text, this.nightMode);
-    this.replaceDayAndNight(background_photo_cover, this.nightMode);
+    this.replaceDayAndNight(background_photo_cover, this.nightMode);    
+    this.replaceDayAndNight(cv, this.nightMode);
 
   }
 

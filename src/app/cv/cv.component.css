@@ -1,0 +1,67 @@
+div.cv-day {
+    color: #080435;
+}
+
+div.cv-night {
+    color: #B8B4E6;
+}
+
+div.top_text{
+    position: fixed;
+    top: calc(10vh + 10px);
+    left: calc(20px + 100px);
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.name {
+    font-size: 6vh;
+}
+
+div.mail {
+    font-size: 3vh;
+}
+
+div.middle_text {
+    position: fixed;
+    overflow: auto;
+    top: calc(10vh + 20px + 100px);
+    height: calc(100vh - 10vh - 20px - 100px);
+    left: calc(10px);
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.heater {    
+    font-size: 4vh;    
+}
+
+div.years {    
+    font-size: 3vh;   
+    float: left;
+    width: 20vw;
+}
+
+div.text {    
+    font-size: 3vh;   
+    float: right;   
+    width: calc(80vw - 30px);
+}
+
+hr {
+    width: calc(100vw - 20px);
+}
+
+hr.inside { 
+    height:3px; 
+    visibility:hidden; 
+    margin-bottom:-1px; 
+}
+
+hr.outside {
+     height:30px; 
+     visibility:hidden; 
+     margin-bottom:-1px; 
+}
