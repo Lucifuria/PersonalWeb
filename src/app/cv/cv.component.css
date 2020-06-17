@@ -1,67 +1,215 @@
-div.cv-day {
+div.cv-day-cv {
     color: #080435;
-}
-
-div.cv-night {
-    color: #B8B4E6;
-}
-
-div.top_text{
+    background-color: white;
+    overflow: hidden;
     position: fixed;
-    top: calc(10vh + 10px);
-    left: calc(20px + 100px);
+    top: calc(10vh);
+    left: calc(10px);
+    width: calc(100vw - 10px);
+    float: left;
+    height: calc(90vh);
+    font-size: 1vh;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
+}
+
+div.cv-night-cv {
+    color: #B8B4E6;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: calc(10vh);
+    left: calc(10px);
+    width: calc(100vw - 10px);
+    float: left;
+    height: calc(90vh);
+    font-size: 1vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-day-cvhome {
+    color: #080435;
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2);
+    top: calc((100vh - 200px)/2);
+    width: 200px;
+    height: 200px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-night-cvhome {
+    color: #B8B4E6;
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2);
+    top: calc((100vh - 200px)/2);
+    width: 200px;
+    height: 200px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-day-home {
+    color: #080435;
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2 + 100px);
+    top: calc(80vh - 100px);
+    width: 0px;
+    height: 0px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-night-home {
+    color: #B8B4E6;
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2 + 100px);
+    top: calc(80vh - 100px);
+    width: 0px;
+    height: 0px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-day-portfoliohome {
+    color: #080435;
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2 + 100px);
+    top: calc((100vh - 200px)/2 + 100px);
+    width: 0px;
+    height: 0px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-night-portfoliohome {
+    color: #B8B4E6;
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2 + 100px);
+    top: calc((100vh - 200px)/2 + 100px);
+    width: 0px;
+    height: 0px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-day-portfolio {
+    color: #080435;
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2 + 100px);
+    top: calc((100vh - 200px)/2 + 100px);
+    width: 0px;
+    height: 0px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.cv-night-portfolio {
+    color: #B8B4E6;
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    left: calc((100vw - 200px)/2 + 100px);
+    top: calc((100vh - 200px)/2 + 100px);
+    width: 0px;
+    height: 0px;
+    font-size: 0.33333vh;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+div.top-text{
+    position: relative;
+    top: calc(10px);
+    left: calc(10px + 100px);
+    height: 110px;
 }
 
 div.name {
-    font-size: 6vh;
+    font-size: 600%;
 }
 
 div.mail {
-    font-size: 3vh;
+    font-size: 300%;
 }
 
-div.middle_text {
-    position: fixed;
-    overflow: auto;
-    top: calc(10vh + 20px + 100px);
-    height: calc(100vh - 10vh - 20px - 100px);
-    left: calc(10px);
+div.middle-text-cvhome {
+    position: relative;
+    overflow: hidden;
+    top: calc(10px);
+    height: calc(100% - 20px - 100px);
+    left: calc(0px);
+}
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+div.middle-text-cv {
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+    top: calc(10px);
+    height: calc(100% - 20px - 100px);
+    left: calc(0px);
 }
 
 div.heater {    
-    font-size: 4vh;    
+    font-size: 400%;    
 }
 
 div.years {    
-    font-size: 3vh;   
+    font-size: 300%;   
     float: left;
-    width: 20vw;
+    width: 20%;
 }
 
 div.text {    
-    font-size: 3vh;   
+    font-size: 300%;   
     float: right;   
-    width: calc(80vw - 30px);
+    width: calc(80% - 30px);
 }
 
 hr {
-    width: calc(100vw - 20px);
+    width: calc(100%);
 }
 
-hr.inside { 
+hr.line { 
     height:3px; 
     visibility:hidden; 
     margin-bottom:-1px; 
 }
 
-hr.outside {
-     height:30px; 
+hr.space {
+     height: calc(min(30px,30%)); 
      visibility:hidden; 
      margin-bottom:-1px; 
 }

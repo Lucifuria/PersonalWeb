@@ -21,20 +21,25 @@ export class PageService {
     let home_text = document.getElementById('home-text');
     let cvhome_text = document.getElementById('cvhome-text');
     let portfoliohome_text = document.getElementById('portfoliohome-text');
+    let cv = document.getElementById('cv');
+    let cv_middle_text = document.getElementById('cv-middle-text');
 
     if (this.nightModeService.nightMode) {
       background_photo.className = "background-photo-night-" + this.currentPage;  
       background_photo_cover.className = "background-photo-cover-night-" + this.currentPage;        
-      portrait_photo.className = "portrait-photo-night-" + this.currentPage;     
+      portrait_photo.className = "portrait-photo-night-" + this.currentPage;  
+      if (cv) cv.className = "cv-night-" + this.currentPage;
     }
     else {      
       background_photo.className = "background-photo-day-" + this.currentPage; 
       background_photo_cover.className = "background-photo-cover-day-" + this.currentPage; 
-      portrait_photo.className = "portrait-photo-day-" + this.currentPage;  
+      portrait_photo.className = "portrait-photo-day-" + this.currentPage;    
+      if (cv) cv.className = "cv-day-" + this.currentPage;
     }
     
     background_photo_mask.className = "background-photo-mask-" + this.currentPage;
-    portrait_photo_mask.className = "portrait-photo-mask-" + this.currentPage;
+    portrait_photo_mask.className = "portrait-photo-mask-" + this.currentPage;  
+    if (cv_middle_text) cv_middle_text.className = "middle-text-" + this.currentPage;
 
     if (this.currentPage == "home" && home_text) {
       home_text.className = home_text.className.replace("hidden", "visible");

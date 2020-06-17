@@ -1,8 +1,8 @@
 <app-background-image (wheel)="onMouseWheel($event)"></app-background-image>
+<app-cv *ngIf="cv_page" (wheel)="onMouseWheel($event)" (click)="onClick($event)"></app-cv>
 <app-portrait-image (wheel)="onMouseWheel($event)" (click)="onClick($event)"></app-portrait-image>
 <app-home *ngIf="home_page" (wheel)="onMouseWheel($event)"></app-home>
 <app-cvhome *ngIf="cvhome_page" (wheel)="onMouseWheel($event)"></app-cvhome>
 <app-portfoliohome *ngIf="portfoliohome_page" (wheel)="onMouseWheel($event)"></app-portfoliohome>
-<app-cv *ngIf="cv_page"></app-cv>
 <app-nigh-mode-switch (wheel)="onMouseWheel($event)"></app-nigh-mode-switch>
 <router-outlet></router-outlet>

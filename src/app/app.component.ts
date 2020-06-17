@@ -15,7 +15,7 @@ export class AppComponent {
   home_page = true;
   cvhome_page = false;
   portfoliohome_page = false;
-  cv_page = false;
+  cv_page = true;
   lastEvent = -201;
 
   onMouseWheel(evt) {   
@@ -80,7 +80,6 @@ export class AppComponent {
   onClick(evt) { 
     if (this.pageService.currentPage == "cvhome") {
       this.pageService.currentPage = "cv";
-      this.cv_page = true;
     }
     else if (this.pageService.currentPage == "portfoliohome") {
       this.pageService.currentPage = "portfolio";
