@@ -14,6 +14,8 @@ import { PortraitImageComponent } from './portrait-image/portrait-image.componen
 import { PortfoliohomeComponent } from './portfoliohome/portfoliohome.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CvComponent } from './cv/cv.component';
+import { GoHomeComponent } from './go-home/go-home.component';
+import { GoBackComponent } from './go-back/go-back.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CvComponent } from './cv/cv.component';
     PortraitImageComponent,
     PortfoliohomeComponent,
     PortfolioComponent,
-    CvComponent
+    CvComponent,
+    GoHomeComponent,
+    GoBackComponent
   ],
   imports: [
     BrowserModule,
