@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NightModeService } from '../night-mode.service';
 
 @Component({
   selector: 'app-go-back',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoBackComponent implements OnInit {
 
-  constructor() { }
+  constructor(public nightModeService: NightModeService) { }
 
   ngOnInit(): void {
+
+    this.nightModeService.setMode();
+
   }
 
 }

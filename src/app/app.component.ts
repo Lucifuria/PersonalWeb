@@ -16,7 +16,9 @@ export class AppComponent {
   cvhome_page = false;
   portfoliohome_page = false;
   cv_page = true;
-  lastEvent = -201;
+  go_back = false;
+  go_home = false;
+  lastEvent = -51;
 
   onMouseWheel(evt) {   
     if (evt.timeStamp - this.lastEvent > 50)
@@ -27,6 +29,7 @@ export class AppComponent {
       console.log(evt.timeStamp);   
       if (evt.wheelDelta < 0) {
         if (this.pageService.currentPage == "home") {
+          this.go_home = true;
           this.pageService.currentPage = "cvhome";
           this.cvhome_page = true;
 
@@ -50,6 +53,7 @@ export class AppComponent {
       else {
         if (this.pageService.currentPage == "cvhome") {  
           this.home_page = true;
+          this.go_home = false;
           this.pageService.currentPage = "home";
 
           this.pageService.delay(1000).then(any=>{          
@@ -77,13 +81,41 @@ export class AppComponent {
 
   }
 
-  onClick(evt) { 
+  goInto(evt) { 
     if (this.pageService.currentPage == "cvhome") {
       this.pageService.currentPage = "cv";
     }
     else if (this.pageService.currentPage == "portfoliohome") {
       this.pageService.currentPage = "portfolio";
     }
+
+    this.go_back = true;
+
+    this.nightModeService.setMode();
+    this.pageService.setPage();
+  }
+
+  goBack(evt) { 
+    if (this.pageService.currentPage == "cv") {
+      this.pageService.currentPage = "cvhome";
+    }
+    else if (this.pageService.currentPage == "portfolio") {
+      this.pageService.currentPage = "portfoliohome";
+    }
+
+    this.go_back = false;
+
+    this.nightModeService.setMode();
+    this.pageService.setPage();
+  }
+
+  goHome(evt) { 
+    this.pageService.currentPage = "home";
+    this.go_home = false;
+    this.go_back = false;
+    this.home_page = true;
+    this.portfoliohome_page = false;
+    this.cvhome_page = false;
 
     this.nightModeService.setMode();
     this.pageService.setPage();
