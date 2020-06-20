@@ -131,7 +131,7 @@ transition: 1.0s;
   width : 101vw;
   position: fixed;
   left: 0px;
-  bottom: -30vh;     
+  bottom: -30px;     
 
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -142,7 +142,7 @@ opacity: 35%;
 width : 101vw;
 position: fixed;
 left: 0px;
-bottom: -30vh;
+bottom: -30px;
 
 -webkit-transition: 1.0s;
 transition: 1.0s;
@@ -259,7 +259,7 @@ transition: 1.0s;
   width : 101vw;
   position: fixed;
   left: 0px;
-  bottom: -30vh;     
+  bottom: -30px;     
 
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -270,7 +270,7 @@ opacity: 35%;
 width : 101vw;
 position: fixed;
 left: 0px;
-bottom: -30vh;
+bottom: -30px;
 
 -webkit-transition: 1.0s;
 transition: 1.0s;

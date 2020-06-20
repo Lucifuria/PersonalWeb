@@ -7,7 +7,7 @@ import { NightModeService } from './night-mode.service';
 export class PageService {
 
   public currentPage = "home";
-  public timerPause = true;
+  public timerPause = false;
   private start = true;
 
   constructor(public nightModeService: NightModeService) { }

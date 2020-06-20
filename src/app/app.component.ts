@@ -19,15 +19,23 @@ export class AppComponent {
   go_back = false;
   go_home = false;
   lastEvent = -51;
+  startTouch = 0;
 
-  onMouseWheel(evt) {   
+  onTouchStart(evt) { 
+    this.startTouch = evt.touches[0].clientY;
+  }
+
+  onMouseWheel(evt) {  
+    let verticalDirection = 0;
+    if (evt.changedTouches)
+      verticalDirection = this.startTouch - evt.changedTouches[0].clientY;
     if (evt.timeStamp - this.lastEvent > 50)
       this.pageService.timerPause = true;
 
     this.lastEvent = evt.timeStamp;     
     if (this.pageService.timerPause) {       
-      console.log(evt.timeStamp);   
-      if (evt.wheelDelta < 0) {
+      //console.log(evt.timeStamp);
+      if (evt.wheelDelta < 0 || verticalDirection > 0) {
         if (this.pageService.currentPage == "home") {
           this.go_home = true;
           this.pageService.currentPage = "cvhome";
@@ -50,7 +58,7 @@ export class AppComponent {
           });
         }
       }
-      else {
+      else if (evt.wheelDelta > 0 || verticalDirection < 0){
         if (this.pageService.currentPage == "cvhome") {  
           this.home_page = true;
           this.go_home = false;
