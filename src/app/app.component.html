@@ -1,10 +1,12 @@
-<app-background-image (wheel)="onMouseWheel($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-background-image>
-<app-cv *ngIf="cv_page" (wheel)="onMouseWheel($event)" (click)="goInto($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-cv>
-<app-portrait-image (wheel)="onMouseWheel($event)" (click)="goInto($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-portrait-image>
-<app-home *ngIf="home_page" (wheel)="onMouseWheel($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-home>
-<app-cvhome *ngIf="cvhome_page" (wheel)="onMouseWheel($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-cvhome>
-<app-portfoliohome *ngIf="portfoliohome_page" (wheel)="onMouseWheel($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-portfoliohome>
-<app-nigh-mode-switch (wheel)="onMouseWheel($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-nigh-mode-switch>
-<app-go-back *ngIf="go_back" (wheel)="onMouseWheel($event)" (click)="goBack($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-go-back>
-<app-go-home *ngIf="go_home" (wheel)="onMouseWheel($event)" (click)="goHome($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)"></app-go-home>
+<div (wheel)="onMouseWheel($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)">
+    <app-background-image></app-background-image>
+    <app-cv *ngIf="cv_page" (click)="goInto($event)"></app-cv>
+    <app-portrait-image (click)="goInto($event)"></app-portrait-image>
+    <app-home *ngIf="home_page"></app-home>
+    <app-cvhome *ngIf="cvhome_page" (click)="goInto($event)"></app-cvhome>
+    <app-portfoliohome *ngIf="portfoliohome_page" (click)="goInto($event)"></app-portfoliohome>
+    <app-nigh-mode-switch></app-nigh-mode-switch>
+    <app-go-back *ngIf="go_back" (click)="goBack($event)"></app-go-back>
+    <app-go-home *ngIf="go_home" (click)="goHome($event)"></app-go-home>
+</div>
 <router-outlet></router-outlet>

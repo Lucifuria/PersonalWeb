@@ -35,7 +35,7 @@ export class AppComponent {
     this.lastEvent = evt.timeStamp;     
     if (this.pageService.timerPause) {       
       //console.log(evt.timeStamp);
-      if (evt.wheelDelta < 0 || verticalDirection > 0) {
+      if (evt.wheelDelta < 0 || verticalDirection > 10) {
         if (this.pageService.currentPage == "home") {
           this.go_home = true;
           this.pageService.currentPage = "cvhome";
@@ -58,7 +58,7 @@ export class AppComponent {
           });
         }
       }
-      else if (evt.wheelDelta > 0 || verticalDirection < 0){
+      else if (evt.wheelDelta > 0 || verticalDirection < -10) {
         if (this.pageService.currentPage == "cvhome") {  
           this.home_page = true;
           this.go_home = false;
@@ -97,7 +97,7 @@ export class AppComponent {
       this.pageService.currentPage = "portfolio";
     }
 
-    this.go_back = true;
+    if (this.pageService.currentPage == "cv" || this.pageService.currentPage == "portfolio")this.go_back = true;
 
     this.nightModeService.setMode();
     this.pageService.setPage();

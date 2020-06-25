@@ -1,9 +1,9 @@
 .background-photo-day-home {  
     opacity: 100%;
-    width : 101vw;
+    width : calc(max(101vw,140vh));
     position: fixed;
     left: 0px;
-    bottom: 30vh;     
+    bottom: 30%;     
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -11,49 +11,49 @@
 
 .background-photo-night-home {
   opacity: 35%;
-  width : 101vw;
+  width : calc(max(101vw,140vh));
   position: fixed;
   left: 0px;
-  bottom: 30vh;
+  bottom: 30%;
 
   -webkit-transition: 1.0s;
   transition: 1.0s;
 }
 
 .background-photo-mask-home {
-  height: 70vh;
-  width: 101vw;
+  height: 70%;
+  width: 101%;
   background-color: black;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 30vh;
+  bottom: 30%;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
 }
 
 .background-photo-cover-day-home {
-  height: 0vh;
-  width: 101vw;
+  height: 0px;
+  width: calc(max(101vw,140vh));
   background-color: white;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
 }
 
 .background-photo-cover-night-home {
-  height: 0vh;
-  width: 101vw;
+  height: 0px;
+  width: calc(max(101vw,140vh));
   background-color: black;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -63,7 +63,7 @@
 
 .background-photo-day-cvhome {  
   opacity: 100%;
-  width : 101vw;
+  width : calc(max(101vw,140vh));
   position: fixed;
   left: 0px;
   bottom: 0px;      
@@ -74,7 +74,7 @@
 
 .background-photo-night-cvhome {
 opacity: 35%;
-width : 101vw;
+width : calc(max(101vw,140vh));
 position: fixed;
 left: 0px;
 bottom: 0px;
@@ -84,8 +84,8 @@ transition: 1.0s;
 }
 
 .background-photo-mask-cvhome {
-height: 101vh;
-width: 101vw;
+height: 101%;
+width: 101%;
 background-color: black;
 display: inline-block;    
 position: fixed;
@@ -97,26 +97,26 @@ transition: 1.0s;
 }
 
 .background-photo-cover-day-cvhome {
-  height: 0vh;
-  width: 101vw;
+  height: 0px;
+  width: calc(max(101vw,140vh));
   background-color: white;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
 }
 
 .background-photo-cover-night-cvhome {
-  height: 0vh;
-  width: 101vw;
+  height: 0px;
+  width: calc(max(101vw,140vh));
   background-color: black;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -128,10 +128,10 @@ transition: 1.0s;
 
 .background-photo-day-portfoliohome {  
   opacity: 100%;
-  width : 101vw;
+  width : calc(max(101vw,140vh));
   position: fixed;
   left: 0px;
-  bottom: -30px;     
+  bottom: -30%;     
 
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -139,49 +139,49 @@ transition: 1.0s;
 
 .background-photo-night-portfoliohome {
 opacity: 35%;
-width : 101vw;
+width : calc(max(101vw,140vh));
 position: fixed;
 left: 0px;
-bottom: -30px;
+bottom: -30%;
 
 -webkit-transition: 1.0s;
 transition: 1.0s;
 }
 
 .background-photo-mask-portfoliohome {
-height: 101vh;
-width: 101vw;
+height: 101%;
+width: 101%;
 background-color: black;
 display: inline-block;    
 position: fixed;
 left: 0px;
-bottom: 0vh;
+bottom: 0px;
 
 -webkit-transition: 1.0s;
 transition: 1.0s;
 }
 
 .background-photo-cover-day-portfoliohome {
-  height: 0vh;
-  width: 101vw;
+  height: 0px;
+  width: calc(max(101vw,140vh));
   background-color: white;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
 }
 
 .background-photo-cover-night-portfoliohome {
-  height: 0vh;
-  width: 101vw;
+  height: 0px;
+  width: calc(max(101vw,140vh));
   background-color: black;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -192,7 +192,7 @@ transition: 1.0s;
 
 .background-photo-day-cv {  
   opacity: 100%;
-  width : 101vw;
+  width : calc(max(101vw,140vh));
   position: fixed;
   left: 0px;
   bottom: 0px;      
@@ -203,7 +203,7 @@ transition: 1.0s;
 
 .background-photo-night-cv {
 opacity: 35%;
-width : 101vw;
+width : calc(max(101vw,140vh));
 position: fixed;
 left: 0px;
 bottom: 0px;
@@ -213,8 +213,8 @@ transition: 1.0s;
 }
 
 .background-photo-mask-cv {
-height: 101vh;
-width: 101vw;
+height: 101%;
+width: 101%;
 background-color: black;
 display: inline-block;    
 position: fixed;
@@ -226,26 +226,26 @@ transition: 1.0s;
 }
 
 .background-photo-cover-day-cv {
-  height: 90vh;
-  width: 101vw;
+  height: 90%;
+  width: calc(max(101vw,140vh));
   background-color: white;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
 }
 
 .background-photo-cover-night-cv {
-  height: 90vh;
-  width: 101vw;
+  height: 90%;
+  width: calc(max(101vw,140vh));
   background-color: black;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -256,10 +256,10 @@ transition: 1.0s;
 
 .background-photo-day-portfolio {  
   opacity: 100%;
-  width : 101vw;
+  width : calc(max(101vw,140vh));
   position: fixed;
   left: 0px;
-  bottom: -30px;     
+  bottom: -30%;     
 
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -267,49 +267,49 @@ transition: 1.0s;
 
 .background-photo-night-portfolio {
 opacity: 35%;
-width : 101vw;
+width : calc(max(101vw,140vh));
 position: fixed;
 left: 0px;
-bottom: -30px;
+bottom: -30%;
 
 -webkit-transition: 1.0s;
 transition: 1.0s;
 }
 
 .background-photo-mask-portfolio {
-height: 101vh;
-width: 101vw;
+height: 101%;
+width: 101%;
 background-color: black;
 display: inline-block;    
 position: fixed;
 left: 0px;
-bottom: 0vh;
+bottom: 0px;
 
 -webkit-transition: 1.0s;
 transition: 1.0s;
 }
 
 .background-photo-cover-day-portfolio {
-  height: 90vh;
-  width: 101vw;
+  height: 90%;
+  width: calc(max(101vw,140vh));
   background-color: white;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;
 }
 
 .background-photo-cover-night-portfolio {
-  height: 90vh;
-  width: 101vw;
+  height: 90%;
+  width: calc(max(101vw,140vh));
   background-color: black;
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 0vh;
+  bottom: 0px;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;

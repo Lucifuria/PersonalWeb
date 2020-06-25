@@ -3,11 +3,11 @@ div.cv-day-cv {
     background-color: white;
     overflow: hidden;
     position: fixed;
-    top: calc(10vh);
+    top: calc(10%);
     left: calc(10px);
-    width: calc(100vw - 10px);
+    width: calc(100% - 10px);
     float: left;
-    height: calc(90vh);
+    height: calc(90%);
     font-size: 1vh;
 
     -webkit-transition: 1.0s;
@@ -19,11 +19,11 @@ div.cv-night-cv {
     background-color: black;
     overflow: hidden;
     position: fixed;
-    top: calc(10vh);
+    top: calc(10%);
     left: calc(10px);
-    width: calc(100vw - 10px);
+    width: calc(100% - 10px);
     float: left;
-    height: calc(90vh);
+    height: calc(90%);
     font-size: 1vh;
 
     -webkit-transition: 1.0s;
@@ -35,8 +35,8 @@ div.cv-day-cvhome {
     background-color: white;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2);
-    top: calc((100vh - 200px)/2);
+    left: calc((100% - 200px)/2);
+    top: calc((100% - 200px)/2);
     width: 200px;
     height: 200px;
     font-size: 0.33333vh;
@@ -50,8 +50,8 @@ div.cv-night-cvhome {
     background-color: black;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2);
-    top: calc((100vh - 200px)/2);
+    left: calc((100% - 200px)/2);
+    top: calc((100% - 200px)/2);
     width: 200px;
     height: 200px;
     font-size: 0.33333vh;
@@ -65,8 +65,8 @@ div.cv-day-home {
     background-color: white;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2 + 100px);
-    top: calc(80vh - 100px);
+    left: calc((100% - 200px)/2 + 100px);
+    top: calc(80% - 100px);
     width: 0px;
     height: 0px;
     font-size: 0.33333vh;
@@ -80,8 +80,8 @@ div.cv-night-home {
     background-color: black;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2 + 100px);
-    top: calc(80vh - 100px);
+    left: calc((100% - 200px)/2 + 100px);
+    top: calc(80% - 100px);
     width: 0px;
     height: 0px;
     font-size: 0.33333vh;
@@ -95,8 +95,8 @@ div.cv-day-portfoliohome {
     background-color: white;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2 + 100px);
-    top: calc((100vh - 200px)/2 + 100px);
+    left: calc((100% - 200px)/2 + 100px);
+    top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
     font-size: 0.33333vh;
@@ -110,8 +110,8 @@ div.cv-night-portfoliohome {
     background-color: black;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2 + 100px);
-    top: calc((100vh - 200px)/2 + 100px);
+    left: calc((100% - 200px)/2 + 100px);
+    top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
     font-size: 0.33333vh;
@@ -125,8 +125,8 @@ div.cv-day-portfolio {
     background-color: white;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2 + 100px);
-    top: calc((100vh - 200px)/2 + 100px);
+    left: calc((100% - 200px)/2 + 100px);
+    top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
     font-size: 0.33333vh;
@@ -140,8 +140,8 @@ div.cv-night-portfolio {
     background-color: black;
     position: fixed;
     overflow: hidden;
-    left: calc((100vw - 200px)/2 + 100px);
-    top: calc((100vh - 200px)/2 + 100px);
+    left: calc((100% - 200px)/2 + 100px);
+    top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
     font-size: 0.33333vh;
