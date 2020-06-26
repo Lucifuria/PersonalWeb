@@ -8,7 +8,7 @@ div.cv-day-cv {
     width: calc(100% - 10px);
     float: left;
     height: calc(90%);
-    font-size: 1vh;
+    font-size: 0.35rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -39,7 +39,7 @@ div.cv-day-cvhome {
     top: calc((100% - 200px)/2);
     width: 200px;
     height: 200px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -158,11 +158,11 @@ div.top-text{
 }
 
 div.name {
-    font-size: 600%;
+    font-size: 500%;
 }
 
 div.mail {
-    font-size: 300%;
+    font-size: 250%;
 }
 
 div.middle-text-cvhome {

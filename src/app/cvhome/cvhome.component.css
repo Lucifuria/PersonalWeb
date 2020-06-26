@@ -2,10 +2,11 @@
   div.text-day-visible {
     opacity: 100%;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    top: calc((100vh - 200px)/2 + 200px);
+    top: calc((100% - 200px)/2 + 200px);
     color: #080435; 
+    font-size: 2.5rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -14,10 +15,11 @@
   div.text-day-page {
     opacity: 100%;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    top: 0px;
+    top: calc(10% - 1rem - 5px);
     color: #080435; 
+    font-size: 1rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -26,10 +28,11 @@
   div.text-day-hidden {
     opacity: 0%;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    top: calc((100vh - 200px)/2 + 200px);
+    top: calc((100% - 200px)/2 + 200px);
     color: #080435; 
+    font-size: 2.5rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -39,10 +42,11 @@
   div.text-night-visible {
     opacity: 100%;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    top: calc((100vh - 200px)/2 + 200px);
+    top: calc((100% - 200px)/2 + 200px);
     color: #B8B4E6; 
+    font-size: 2.5rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -51,10 +55,11 @@
   div.text-night-page {
     opacity: 100%;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    top: 0px;
+    top: calc(10% - 1rem - 5px);
     color: #B8B4E6; 
+    font-size: 1rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -63,15 +68,12 @@
   div.text-night-hidden {
     opacity: 0%;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    top: calc((100vh - 200px)/2 + 200px);
+    top: calc((100% - 200px)/2 + 200px);
     color: #B8B4E6; 
+    font-size: 2.5rem;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
-  }
-
-  div.name {
-    font-size: 10vh;
   }
