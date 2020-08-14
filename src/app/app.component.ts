@@ -14,7 +14,6 @@ export class AppComponent {
 
   home_page = true;
   cvhome_page = false;
-  portfoliohome_page = false;
   cv_page = true;
   go_back = false;
   go_home = false;
@@ -47,16 +46,6 @@ export class AppComponent {
             }
           });
         }
-        else if (this.pageService.currentPage == "cvhome") {
-          this.pageService.currentPage = "portfoliohome";
-          this.portfoliohome_page = true;
-
-          this.pageService.delay(1000).then(any=>{          
-            if (this.pageService.currentPage != "cvhome") {
-              this.cvhome_page = false;
-            }
-          });
-        }
       }
       else if (evt.wheelDelta > 0 || verticalDirection < -10) {
         if (this.pageService.currentPage == "cvhome") {  
@@ -67,16 +56,6 @@ export class AppComponent {
           this.pageService.delay(1000).then(any=>{          
             if (this.pageService.currentPage != "cvhome") {
               this.cvhome_page = false;
-            }
-          });
-        }
-        else if (this.pageService.currentPage == "portfoliohome") {
-          this.pageService.currentPage = "cvhome";
-          this.cvhome_page = true;
-
-          this.pageService.delay(1000).then(any=>{          
-            if (this.pageService.currentPage != "portfoliohome") {
-              this.portfoliohome_page = false;
             }
           });
         }
@@ -93,11 +72,8 @@ export class AppComponent {
     if (this.pageService.currentPage == "cvhome") {
       this.pageService.currentPage = "cv";
     }
-    else if (this.pageService.currentPage == "portfoliohome") {
-      this.pageService.currentPage = "portfolio";
-    }
 
-    if (this.pageService.currentPage == "cv" || this.pageService.currentPage == "portfolio")this.go_back = true;
+    if (this.pageService.currentPage == "cv")this.go_back = true;
 
     this.nightModeService.setMode();
     this.pageService.setPage();
@@ -106,9 +82,6 @@ export class AppComponent {
   goBack(evt) { 
     if (this.pageService.currentPage == "cv") {
       this.pageService.currentPage = "cvhome";
-    }
-    else if (this.pageService.currentPage == "portfolio") {
-      this.pageService.currentPage = "portfoliohome";
     }
 
     this.go_back = false;
@@ -122,7 +95,6 @@ export class AppComponent {
     this.go_home = false;
     this.go_back = false;
     this.home_page = true;
-    this.portfoliohome_page = false;
     this.cvhome_page = false;
 
     this.nightModeService.setMode();
