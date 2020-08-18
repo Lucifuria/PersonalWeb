@@ -1,5 +1,5 @@
 # PersonalWeb
-- Website available at http://luciaohmanova.azurewebsites.net/.
+Website available at http://luciaohmanova.azurewebsites.net/.
 
 
 ## Prerequisites
