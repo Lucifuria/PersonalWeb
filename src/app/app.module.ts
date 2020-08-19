@@ -16,6 +16,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CvComponent } from './cv/cv.component';
 import { GoHomeComponent } from './go-home/go-home.component';
 import { GoBackComponent } from './go-back/go-back.component';
+import { GoUpDownComponent } from './go-up-down/go-up-down.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { GoBackComponent } from './go-back/go-back.component';
     PortfolioComponent,
     CvComponent,
     GoHomeComponent,
-    GoBackComponent
+    GoBackComponent,
+    GoUpDownComponent
   ],
   imports: [
     BrowserModule,

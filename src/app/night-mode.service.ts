@@ -21,6 +21,7 @@ export class NightModeService {
     let cv = document.getElementById('cv');
 
     let back_arrow = document.getElementById('back-arrow');
+    let up_down_arrow = document.getElementById('up-down-arrow');
     let home_button = document.getElementById('home-button');
 
     this.replaceDayAndNight(index_body, this.nightMode);
@@ -31,7 +32,8 @@ export class NightModeService {
     this.replaceDayAndNight(portfoliohome_text, this.nightMode);
     this.replaceDayAndNight(background_photo_cover, this.nightMode);    
     this.replaceDayAndNight(cv, this.nightMode);
-    this.replaceDayAndNight(back_arrow, this.nightMode);
+    this.replaceDayAndNight(back_arrow, this.nightMode);    
+    this.replaceDayAndNight(up_down_arrow, this.nightMode);
     this.replaceDayAndNight(home_button, this.nightMode);
 
   }

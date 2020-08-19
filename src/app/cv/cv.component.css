@@ -190,20 +190,16 @@ div.heater {
     font-size: 400%;    
 }
 
-div.years {    
-    font-size: 300%;   
-    float: left;
-    width: 20%;
-}
-
 div.text {    
     font-size: 300%;   
-    float: right;   
-    width: calc(80% - 30px);
 }
 
 hr {
     width: calc(100%);
+}
+
+ul {
+    margin: 0;
 }
 
 hr.line { 
