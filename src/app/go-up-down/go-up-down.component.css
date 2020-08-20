@@ -1,9 +1,8 @@
-.up-down-arrow-day-home {
+.up-down-arrow-dark-day-home {
+    opacity: 1;
     position: fixed;
-    filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
-    -webkit-filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
-    right: calc(15px);
-    bottom: calc(15px);
+    right: calc(12px);
+    bottom: calc(12px);
     transform: rotate(-90deg);
     height: 5%;
 
@@ -11,25 +10,11 @@
     transition: 1.0s;
 }
 
-.up-down-arrow-under-day-home {
+.up-down-arrow-light-day-home {
+    opacity: 0;
     position: fixed;
-    filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
-    -webkit-filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
     right: calc(12px);
     bottom: calc(12px);
-    transform: rotate(-90deg);
-    height: 6%;
-
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
-}
-
-.up-down-arrow-night-home {
-    position: fixed;
-    filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
-    -webkit-filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
-    right: calc(15px);
-    bottom: calc(15px);
     transform: rotate(-90deg);
     height: 5%;
 
@@ -37,14 +22,25 @@
     transition: 1.0s;
 }
 
-.up-down-arrow-under-night-home {
+.up-down-arrow-dark-night-home {
+    opacity: 0;
     position: fixed;
-    filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
-    -webkit-filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
     right: calc(12px);
     bottom: calc(12px);
     transform: rotate(-90deg);
-    height: 6%;
+    height: 5%;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+.up-down-arrow-light-night-home {
+    opacity: 1;
+    position: fixed;
+    right: calc(12px);
+    bottom: calc(12px);
+    transform: rotate(-90deg);
+    height: 5%;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -54,12 +50,11 @@
 
 
 
-.up-down-arrow-day-cvhome {
+.up-down-arrow-dark-day-cvhome {
+    opacity: 1;
     position: fixed;
-    filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
-    -webkit-filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
-    right: calc(15px);
-    bottom: calc(15px);
+    right: calc(12px);
+    bottom: calc(12px);
     transform: rotate(90deg);
     height: 5%;
 
@@ -67,25 +62,11 @@
     transition: 1.0s;
 }
 
-.up-down-arrow-under-day-cvhome {
+.up-down-arrow-light-day-cvhome {
+    opacity: 0;
     position: fixed;
-    filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
-    -webkit-filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
     right: calc(12px);
     bottom: calc(12px);
-    transform: rotate(90deg);
-    height: 6%;
-
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
-}
-
-.up-down-arrow-night-cvhome {
-    position: fixed;
-    filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
-    -webkit-filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
-    right: calc(15px);
-    bottom: calc(15px);
     transform: rotate(90deg);
     height: 5%;
 
@@ -93,14 +74,25 @@
     transition: 1.0s;
 }
 
-.up-down-arrow-under-night-cvhome {
+.up-down-arrow-dark-night-cvhome {
+    opacity: 0;
     position: fixed;
-    filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
-    -webkit-filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
     right: calc(12px);
     bottom: calc(12px);
     transform: rotate(90deg);
-    height: 6%;
+    height: 5%;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+.up-down-arrow-light-night-cvhome {
+    opacity: 1;
+    position: fixed;
+    right: calc(12px);
+    bottom: calc(12px);
+    transform: rotate(90deg);
+    height: 5%;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;

@@ -20,12 +20,12 @@ export class NightModeService {
     
     let cv = document.getElementById('cv');
 
-    let back_arrow = document.getElementById('back-arrow');
-    let back_arrow_under = document.getElementById('back-arrow-under');
-    let up_down_arrow = document.getElementById('up-down-arrow');    
-    let up_down_arrow_under = document.getElementById('up-down-under-arrow');
-    let home_button = document.getElementById('home-button');
-    let home_button_under = document.getElementById('home-button-under');
+    let back_arrow_dark = document.getElementById('back-arrow-dark');
+    let back_arrow_light = document.getElementById('back-arrow-light');
+    let up_down_arrow_dark = document.getElementById('up-down-arrow-dark');    
+    let up_down_arrow_light = document.getElementById('up-down-arrow-light');
+    let home_button_dark = document.getElementById('home-button-dark');
+    let home_button_light = document.getElementById('home-button-light');
 
     this.replaceDayAndNight(index_body, this.nightMode);
     this.replaceDayAndNight(background_photo, this.nightMode);
@@ -35,12 +35,12 @@ export class NightModeService {
     this.replaceDayAndNight(portfoliohome_text, this.nightMode);
     this.replaceDayAndNight(background_photo_cover, this.nightMode);    
     this.replaceDayAndNight(cv, this.nightMode);
-    this.replaceDayAndNight(back_arrow, this.nightMode);    
-    this.replaceDayAndNight(back_arrow_under, this.nightMode);    
-    this.replaceDayAndNight(up_down_arrow, this.nightMode);     
-    this.replaceDayAndNight(up_down_arrow_under, this.nightMode);
-    this.replaceDayAndNight(home_button, this.nightMode);
-    this.replaceDayAndNight(home_button_under, this.nightMode);
+    this.replaceDayAndNight(back_arrow_dark, this.nightMode);    
+    this.replaceDayAndNight(back_arrow_light, this.nightMode);    
+    this.replaceDayAndNight(up_down_arrow_dark, this.nightMode);     
+    this.replaceDayAndNight(up_down_arrow_light, this.nightMode);
+    this.replaceDayAndNight(home_button_dark, this.nightMode);
+    this.replaceDayAndNight(home_button_light, this.nightMode);
 
   }
 

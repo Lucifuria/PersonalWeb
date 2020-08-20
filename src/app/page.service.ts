@@ -23,24 +23,24 @@ export class PageService {
     let portfoliohome_text = document.getElementById('portfoliohome-text');
     let cv = document.getElementById('cv');
     let cv_middle_text = document.getElementById('cv-middle-text');
-    let up_down_arrow = document.getElementById('up-down-arrow');
-    let up_down_arrow_under = document.getElementById('up-down-under-arrow');
+    let up_down_arrow_dark = document.getElementById('up-down-arrow-dark');
+    let up_down_arrow_light = document.getElementById('up-down-arrow-light');
 
     if (this.nightModeService.nightMode) {
       background_photo.className = "background-photo-night-" + this.currentPage;  
       background_photo_cover.className = "background-photo-cover-night-" + this.currentPage;        
       portrait_photo.className = "portrait-photo-night-" + this.currentPage;  
       if (cv) cv.className = "cv-night-" + this.currentPage;      
-      if (up_down_arrow) up_down_arrow.className = "up-down-arrow-night-" + this.currentPage;
-      if (up_down_arrow_under) up_down_arrow_under.className = "up-down-arrow-under-night-" + this.currentPage;
+      if (up_down_arrow_dark) up_down_arrow_dark.className = "up-down-arrow-dark-night-" + this.currentPage;
+      if (up_down_arrow_light) up_down_arrow_light.className = "up-down-arrow-light-night-" + this.currentPage;
     }
     else {      
       background_photo.className = "background-photo-day-" + this.currentPage; 
       background_photo_cover.className = "background-photo-cover-day-" + this.currentPage; 
       portrait_photo.className = "portrait-photo-day-" + this.currentPage;    
       if (cv) cv.className = "cv-day-" + this.currentPage;
-      if (up_down_arrow) up_down_arrow.className = "up-down-arrow-day-" + this.currentPage;
-      if (up_down_arrow_under) up_down_arrow_under.className = "up-down-arrow-under-day-" + this.currentPage;
+      if (up_down_arrow_dark) up_down_arrow_dark.className = "up-down-arrow-dark-day-" + this.currentPage;
+      if (up_down_arrow_light) up_down_arrow_light.className = "up-down-arrow-light-day-" + this.currentPage;
     }
     
     background_photo_mask.className = "background-photo-mask-" + this.currentPage;
