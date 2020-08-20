@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NightModeService } from '../night-mode.service';
+import { PageService } from '../page.service';
 
 @Component({
   selector: 'app-go-up-down',
@@ -8,12 +9,13 @@ import { NightModeService } from '../night-mode.service';
 })
 export class GoUpDownComponent implements OnInit {
 
-  constructor(public nightModeService: NightModeService) { }
+  constructor(public nightModeService: NightModeService, public pageService: PageService) { }
 
   ngOnInit(): void {
 
     this.nightModeService.setMode();
-    
+    this.pageService.setPage();
+
   }
 
 }

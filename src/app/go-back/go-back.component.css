@@ -2,8 +2,21 @@
     position: fixed;
     filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
     -webkit-filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
-    left: calc(40px);
+    left: calc(60px);
     top: calc(15px);
+    height: 5%;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+.back-arrow-under-day {
+    position: fixed;
+    filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
+    -webkit-filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
+    left: calc(57px);
+    top: calc(12px);
+    height: 6%;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -13,8 +26,21 @@
     position: fixed;
     filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
     -webkit-filter: invert(76%) sepia(20%) saturate(681%) hue-rotate(204deg) brightness(95%) contrast(89%); /*from black to #B8B4E6*/
-    left: calc(40px);
+    left: calc(60px);
     top: calc(15px);
+    height: 5%;
+
+    -webkit-transition: 1.0s;
+    transition: 1.0s;
+}
+
+.back-arrow-under-night {
+    position: fixed;
+    filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
+    -webkit-filter: invert(7%) sepia(37%) saturate(6755%) hue-rotate(243deg) brightness(74%) contrast(109%); /*from black to #080435*/
+    left: calc(57px);
+    top: calc(12px);
+    height: 6%;
 
     -webkit-transition: 1.0s;
     transition: 1.0s;

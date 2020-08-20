@@ -24,6 +24,7 @@ export class PageService {
     let cv = document.getElementById('cv');
     let cv_middle_text = document.getElementById('cv-middle-text');
     let up_down_arrow = document.getElementById('up-down-arrow');
+    let up_down_arrow_under = document.getElementById('up-down-under-arrow');
 
     if (this.nightModeService.nightMode) {
       background_photo.className = "background-photo-night-" + this.currentPage;  
@@ -31,6 +32,7 @@ export class PageService {
       portrait_photo.className = "portrait-photo-night-" + this.currentPage;  
       if (cv) cv.className = "cv-night-" + this.currentPage;      
       if (up_down_arrow) up_down_arrow.className = "up-down-arrow-night-" + this.currentPage;
+      if (up_down_arrow_under) up_down_arrow_under.className = "up-down-arrow-under-night-" + this.currentPage;
     }
     else {      
       background_photo.className = "background-photo-day-" + this.currentPage; 
@@ -38,6 +40,7 @@ export class PageService {
       portrait_photo.className = "portrait-photo-day-" + this.currentPage;    
       if (cv) cv.className = "cv-day-" + this.currentPage;
       if (up_down_arrow) up_down_arrow.className = "up-down-arrow-day-" + this.currentPage;
+      if (up_down_arrow_under) up_down_arrow_under.className = "up-down-arrow-under-day-" + this.currentPage;
     }
     
     background_photo_mask.className = "background-photo-mask-" + this.currentPage;

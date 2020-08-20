@@ -1,8 +1,10 @@
 <div class="cv-day-cv" id="cv">
     <div class="top-text">
         <div class="name">Lucia Ohmanova</div>
-        <div class="mail"><a href="mailto:lucia.ohmanova@gmail.com">lucia.ohmanova@gmail.com</a></div>
-        <div class="git"><a href="https://github.com/Lucifuria/">https://github.com/Lucifuria</a></div>
+        <div class="mail" *ngIf="!cvService.small_version"><a href="mailto:lucia.ohmanova@gmail.com">lucia.ohmanova@gmail.com</a></div>
+        <div class="git" *ngIf="!cvService.small_version"><a href="https://github.com/Lucifuria/">https://github.com/Lucifuria</a></div>
+        <div class="mail" *ngIf="cvService.small_version">lucia.ohmanova@gmail.com</div>
+        <div class="git" *ngIf="cvService.small_version">https://github.com/Lucifuria</div>
     </div>
     <div class="middle-text-cv" id="cv-middle-text">
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NightModeService } from './night-mode.service';
 import { PageService } from './page.service';
+import { CvService } from './cv.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,14 @@ import { PageService } from './page.service';
 })
 
 export class AppComponent {
-  constructor(public nightModeService: NightModeService, public pageService: PageService) {
+  constructor(public nightModeService: NightModeService, public pageService: PageService, public cvService: CvService) {
+  }
+
+  onInit(){
+
+    this.nightModeService.setMode();
+    this.pageService.setPage();
+
   }
 
   home_page = true;
@@ -90,9 +98,10 @@ export class AppComponent {
   goInto(evt) { 
     if (this.pageService.currentPage == "cvhome") {
       this.pageService.currentPage = "cv";
+      this.cvService.small_version = false;
     }
 
-    if (this.pageService.currentPage == "cv")this.go_back = true;
+    if (this.pageService.currentPage == "cv") this.go_back = true;
 
     this.nightModeService.setMode();
     this.pageService.setPage();
@@ -101,6 +110,7 @@ export class AppComponent {
   goBack(evt) { 
     if (this.pageService.currentPage == "cv") {
       this.pageService.currentPage = "cvhome";
+      this.cvService.small_version = true;
     }
 
     this.go_back = false;
@@ -111,6 +121,7 @@ export class AppComponent {
 
   goHome(evt) { 
     this.pageService.currentPage = "home";
+    this.cvService.small_version = true;
     this.go_home = false;
     this.go_back = false;
     this.home_page = true;

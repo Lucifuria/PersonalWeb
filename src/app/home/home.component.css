@@ -10,7 +10,7 @@
     text-align: center;
     width: 100%;
     position: fixed;
-    bottom: 2vh;
+    top: calc(50% + 120px);
     color: #080435;    
 
     -webkit-transition: 1.0s;
@@ -22,7 +22,7 @@
     text-align: center;
     width: 100%;
     position: fixed;
-    bottom: 2vh;
+    top: calc(50% + 120px);
     color: #080435; 
 
     -webkit-transition: 1.0s;
@@ -35,7 +35,7 @@
     text-align: center;
     width: 100%;
     position: fixed;
-    bottom: 2vh;
+    top: calc(50% + 120px);
     color: #B8B4E6;    
 
     -webkit-transition: 1.0s;
@@ -47,7 +47,7 @@
     text-align: center;
     width: 100%;
     position: fixed;
-    bottom: 2vh;
+    top: calc(50% + 120px);
     color: #B8B4E6; 
 
     -webkit-transition: 1.0s;

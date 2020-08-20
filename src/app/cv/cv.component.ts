@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NightModeService } from '../night-mode.service';
 import { PageService } from '../page.service';
+import { CvService } from '../cv.service';
 
 @Component({
   selector: 'app-cv',
@@ -9,7 +10,7 @@ import { PageService } from '../page.service';
 })
 export class CvComponent implements OnInit {
 
-  constructor(public nightModeService: NightModeService, public pageService: PageService) { }
+  constructor(public nightModeService: NightModeService, public pageService: PageService, public cvService: CvService) { }
 
   ngOnInit(): void {
 

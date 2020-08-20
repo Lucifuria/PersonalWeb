@@ -3,7 +3,7 @@
     width : calc(max(101vw,140vh));
     position: fixed;
     left: 0px;
-    bottom: 30%;     
+    bottom: 50%;     
 
     -webkit-transition: 1.0s;
     transition: 1.0s;
@@ -14,7 +14,7 @@
   width : calc(max(101vw,140vh));
   position: fixed;
   left: 0px;
-  bottom: 30%;
+  bottom: 50%;
 
   -webkit-transition: 1.0s;
   transition: 1.0s;
@@ -27,7 +27,7 @@
   display: inline-block;    
   position: fixed;
   left: 0px;
-  bottom: 30%;
+  bottom: 50%;
   
   -webkit-transition: 1.0s;
   transition: 1.0s;

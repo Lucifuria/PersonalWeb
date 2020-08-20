@@ -10,8 +10,8 @@ div.cv-day-cv {
     height: calc(90%);
     font-size: 0.35rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-night-cv {
@@ -24,10 +24,10 @@ div.cv-night-cv {
     width: calc(100% - 10px);
     float: left;
     height: calc(90%);
-    font-size: 1vh;
+    font-size: 0.35rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-day-cvhome {
@@ -41,8 +41,8 @@ div.cv-day-cvhome {
     height: 200px;
     font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-night-cvhome {
@@ -54,10 +54,10 @@ div.cv-night-cvhome {
     top: calc((100% - 200px)/2);
     width: 200px;
     height: 200px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-day-home {
@@ -69,10 +69,10 @@ div.cv-day-home {
     top: calc(80% - 100px);
     width: 0px;
     height: 0px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-night-home {
@@ -84,10 +84,10 @@ div.cv-night-home {
     top: calc(80% - 100px);
     width: 0px;
     height: 0px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-day-portfoliohome {
@@ -99,10 +99,10 @@ div.cv-day-portfoliohome {
     top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-night-portfoliohome {
@@ -114,10 +114,10 @@ div.cv-night-portfoliohome {
     top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-day-portfolio {
@@ -129,10 +129,10 @@ div.cv-day-portfolio {
     top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.cv-night-portfolio {
@@ -144,10 +144,10 @@ div.cv-night-portfolio {
     top: calc((100% - 200px)/2 + 100px);
     width: 0px;
     height: 0px;
-    font-size: 0.33333vh;
+    font-size: 0.1rem;
 
-    -webkit-transition: 1.0s;
-    transition: 1.0s;
+    -webkit-transition: 1.0s, text-shadow 0.0s;
+    transition: 1.0s, text-shadow 0.0s;
 }
 
 div.top-text{
