@@ -8,4 +8,4 @@ Website available at http://luciaohmanova.azurewebsites.net/.
 ## Local debugging
 - Run `ng serve -o` in the root folder of the repository.
 
-![](https://github.com/Lucifuria/PersonalWeb/screen01.png)
+![first webpage screen](https://github.com/Lucifuria/PersonalWeb/blob/master/screen01.png)
