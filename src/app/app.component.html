@@ -1,12 +1,1 @@
-<div (wheel)="onMouseWheel($event)" (touchstart)="onTouchStart($event)" (touchend)="onMouseWheel($event)">
-    <app-background-image></app-background-image>
-    <app-cv (click)="goInto($event)"></app-cv>
-    <app-portrait-image (click)="goInto($event)"></app-portrait-image>
-    <app-home *ngIf="home_page"></app-home>
-    <app-cvhome *ngIf="cvhome_page" (click)="goInto($event)"></app-cvhome>
-    <app-nigh-mode-switch></app-nigh-mode-switch>
-    <app-go-back *ngIf="go_back" (click)="goBack($event)"></app-go-back>
-    <app-go-home *ngIf="go_home" (click)="goHome($event)"></app-go-home>
-    <app-go-up-down *ngIf="!go_back" (click)="onMouseWheel(null)"></app-go-up-down>
-</div>
 <router-outlet></router-outlet>
